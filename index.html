@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>오경근 — 사역·교육·일상을 돕는 AI 도구</title>
+<meta name="description" content="목회자이자 개발자 오경근이 만드는 AI 도구 모음 — 계약서 검토, 설교 준비, 교회 행정, 교육 상담 등 실생활에 바로 쓰는 프로그램들." />
+<meta property="og:title" content="오경근 — 사역·교육·일상을 돕는 AI 도구" />
+<meta property="og:description" content="믿음과 기술로 사람을 돕는 도구를 만듭니다. 계약서 검토 AI, 설교 준비, 교회 행정 자동화 등." />
+<meta property="og:type" content="website" />
+<style>
+  :root{
+    --navy:#1e3a8a; --navy2:#2746a6; --ink:#1f2937; --gray:#6b7280;
+    --soft:#f3f4f6; --line:#e5e7eb; --accent:#f59e0b; --green:#16a34a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Pretendard','Malgun Gothic','맑은 고딕',system-ui,sans-serif;
+    color:var(--ink);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,#1e3a8a 0%,#3b2f8a 55%,#5b21b6 100%);color:#fff;
+    padding:72px 0 64px;text-align:center}
+  .badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);
+    padding:6px 14px;border-radius:999px;font-size:13px;margin-bottom:18px;backdrop-filter:blur(4px)}
+  .hero h1{font-size:44px;font-weight:800;letter-spacing:-1px;margin-bottom:12px}
+  .hero .tag{font-size:19px;opacity:.95;font-weight:500}
+  .hero .bio{max-width:640px;margin:20px auto 0;font-size:15px;opacity:.85;line-height:1.75}
+  .cta{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .cta a{padding:11px 22px;border-radius:10px;font-weight:600;font-size:15px;transition:.15s}
+  .cta .primary{background:#fff;color:var(--navy)}
+  .cta .primary:hover{transform:translateY(-2px)}
+  .cta .ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)}
+  .cta .ghost:hover{background:rgba(255,255,255,.22)}
+
+  /* Section */
+  section{padding:56px 0}
+  .sec-head{text-align:center;margin-bottom:36px}
+  .sec-head h2{font-size:28px;font-weight:800;color:var(--navy);letter-spacing:-.5px}
+  .sec-head p{color:var(--gray);margin-top:8px;font-size:15px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+  .card{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff;
+    transition:.18s;display:flex;flex-direction:column}
+  .card:hover{box-shadow:0 10px 30px rgba(30,58,138,.10);transform:translateY(-3px);border-color:#c7d2fe}
+  .card .ico{font-size:30px;margin-bottom:10px}
+  .card h3{font-size:18px;font-weight:700;margin-bottom:6px}
+  .card .desc{color:var(--gray);font-size:14px;flex:1;margin-bottom:16px}
+  .card .link{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14px;align-self:flex-start}
+  .card .live{color:var(--green)}
+  .card .code{color:var(--navy)}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;margin-bottom:12px;align-self:flex-start}
+  .pill.use{background:#dcfce7;color:#15803d}
+  .pill.cat{background:var(--soft);color:var(--gray)}
+
+  .featured{background:linear-gradient(180deg,#f8faff, #fff)}
+  .featured .card{border:1.5px solid #c7d2fe}
+
+  .cattitle{font-size:16px;font-weight:800;color:var(--navy);margin:30px 0 14px;
+    padding-left:12px;border-left:4px solid var(--accent)}
+
+  footer{background:var(--navy);color:#cbd5e1;padding:40px 0;text-align:center;font-size:14px}
+  footer a{color:#fff;font-weight:600;margin:0 10px}
+  footer .fl{margin-top:14px}
+  @media(max-width:600px){.hero h1{font-size:34px}.hero .tag{font-size:17px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">⛪ 목회자 × 💻 개발자</span>
+    <h1>오경근</h1>
+    <p class="tag">사역·교육·일상을 돕는 AI 도구를 만듭니다</p>
+    <p class="bio">믿음과 기술로 사람을 돕는 일을 합니다. 계약서 검토부터 설교 준비, 교회 행정,
+      교육 상담까지 — 실생활에 바로 쓸 수 있는 도구를 직접 만들어 무료로 나눕니다.</p>
+    <div class="cta">
+      <a class="primary" href="#use">✨ 지금 사용해보기</a>
+      <a class="ghost" href="#works">🛠️ 만든 작품들</a>
+    </div>
+  </div>
+</header>
+
+<!-- 사용 가능 -->
+<section id="use" class="featured">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>✨ 지금 바로 사용해보세요</h2>
+      <p>클릭하면 바로 열립니다 — 설치 없이 웹에서</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="https://legalai-1-ftbe.onrender.com" target="_blank" rel="noopener">
+        <span class="pill use">● 사용 가능</span>
+        <div class="ico">⚖️</div>
+        <h3>LegalAI — 계약서 검토 AI</h3>
+        <p class="desc">계약서를 올리면 과도한 위약금·면책 등 위험 조항을 자동 탐지하고 위험도를 평가합니다.
+          법제처 공개DB 기반 · Word 보고서 제공.</p>
+        <span class="link live">사용하기 →</span>
+      </a>
+      <a class="card" href="https://eocamp-2027.vercel.app" target="_blank" rel="noopener">
+        <span class="pill use">● 사용 가능</span>
+        <div class="ico">❄️</div>
+        <h3>2027 어린이은혜캠프</h3>
+        <p class="desc">겨울 어린이 캠프 안내 사이트. 회차별 테마·일정표·신청 안내를 한눈에.
+          관리자 페이지로 내용 수정 가능.</p>
+        <span class="link live">둘러보기 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 작품들 -->
+<section id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>🛠️ 만든 작품들</h2>
+      <p>사역 · 교육 · AI 자동화 — 다양한 분야의 도구를 만들어 왔습니다</p>
+    </div>
+
+    <div class="cattitle">⛪ 사역 · 교회</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/soultech-oh-ux/sermon-research-institute" target="_blank" rel="noopener">
+        <span class="pill cat">사역</span><div class="ico">📖</div>
+        <h3>설교 연구소</h3>
+        <p class="desc">한국 목회자·신학생을 위한 Claude 설교 준비 스킬 21개 모음.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/Sermon-Assistant-AgenticWorkflow" target="_blank" rel="noopener">
+        <span class="pill cat">사역</span><div class="ico">✍️</div>
+        <h3>설교 준비 AI 워크플로우</h3>
+        <p class="desc">AI 에이전트가 협업해 설교 준비를 돕는 자동화 워크플로우.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/Church-Admin-AgenticWorkflow" target="_blank" rel="noopener">
+        <span class="pill cat">사역</span><div class="ico">⛪</div>
+        <h3>교회 행정 자동화</h3>
+        <p class="desc">교회 행정 업무를 AI 에이전트 워크플로우로 자동화.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/soulcamp-app" target="_blank" rel="noopener">
+        <span class="pill cat">사역</span><div class="ico">🏕️</div>
+        <h3>수련회 영성지도 앱</h3>
+        <p class="desc">수련회에서 영성 지도를 돕는 앱.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+    </div>
+
+    <div class="cattitle">🎓 교육 · 상담</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/soultech-oh-ux/seoil-counseling" target="_blank" rel="noopener">
+        <span class="pill cat">교육</span><div class="ico">💬</div>
+        <h3>유학생 상담일지 시스템</h3>
+        <p class="desc">서일대학교 외국인 유학생 상담일지 웹 시스템.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/random-group-maker" target="_blank" rel="noopener">
+        <span class="pill cat">교육</span><div class="ico">🎲</div>
+        <h3>랜덤 조 편성</h3>
+        <p class="desc">수업·모임용 랜덤 조 편성 웹앱. 설치 없이 바로 사용.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/developing-country-advisor" target="_blank" rel="noopener">
+        <span class="pill cat">교육</span><div class="ico">🗺️</div>
+        <h3>개발도상국 진출 추천</h3>
+        <p class="desc">가상기업 업종 기반 개도국 진출 추천 — 인터랙티브 세계지도.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+    </div>
+
+    <div class="cattitle">🤖 AI 워크플로우 · 기타</div>
+    <div class="grid">
+      <a class="card" href="https://github.com/soultech-oh-ux/Dissertation-Simulator-AgenticWorkflow" target="_blank" rel="noopener">
+        <span class="pill cat">AI</span><div class="ico">🎓</div>
+        <h3>박사논문 시뮬레이터</h3>
+        <p class="desc">AI 에이전트 58개가 협업하는 211단계 박사논문 연구 시뮬레이션.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/SaaS-AgenticWorkflow" target="_blank" rel="noopener">
+        <span class="pill cat">AI</span><div class="ico">⚙️</div>
+        <h3>SaaS 자동 구축기</h3>
+        <p class="desc">AI Agentic Workflow로 SaaS를 자동 구축하는 도구.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+      <a class="card" href="https://github.com/soultech-oh-ux/brk_seoil" target="_blank" rel="noopener">
+        <span class="pill cat">게임</span><div class="ico">🧱</div>
+        <h3>벽돌깨기</h3>
+        <p class="desc">클래식 벽돌깨기 웹 게임.</p>
+        <span class="link code">코드 보기 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>⛪ 목회자이자 개발자 — 믿음과 기술로 사람을 돕습니다</div>
+    <div class="fl">
+      <a href="https://blog.naver.com/kgoh91" target="_blank" rel="noopener">📝 블로그</a>
+      <a href="https://cafe.naver.com/goosd" target="_blank" rel="noopener">☕ 카페</a>
+      <a href="https://github.com/soultech-oh-ux" target="_blank" rel="noopener">💻 GitHub</a>
+    </div>
+    <div style="margin-top:16px;font-size:12px;opacity:.6">© 2026 오경근 · 모든 도구는 참고용이며, 중요 사안은 전문가와 상담하세요.</div>
+  </div>
+</footer>
+
+</body>
+</html>
